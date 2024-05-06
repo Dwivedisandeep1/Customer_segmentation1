@@ -41,7 +41,7 @@ def create_page():
 features = create_page()
 
 # Load the model outside the button click event
-loaded_model = load(open('D:\Deployment_cutomer_segmentation\segmentation.pkl', 'rb'))
+loaded_model = load(open('segmentation.pkl', 'rb'))
 
 if st.sidebar.button('Submit'):
     st.write(features)
